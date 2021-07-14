@@ -276,7 +276,17 @@ footer p{
     font-size: 18px;
 }
 
+/* tablet view
+ */
 
+ @media (max-width:768px) {
+    #nav-container{
+        display: none;
+    }
+    #player-container{
+        grid-template-columns: repeat(2,320px);
+    }
+}
 
 /* -----------------
 
@@ -355,11 +365,3 @@ footer p{
     
 }
 
-@media (max-width:768px) {
-    #nav-container{
-        display: none;
-    }
-    #player-container{
-        grid-template-columns: repeat(2,320px);
-    }
-}
