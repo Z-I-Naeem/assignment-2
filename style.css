@@ -275,3 +275,91 @@ footer p{
     margin: 10px 0;
     font-size: 18px;
 }
+
+
+
+/* -----------------
+
+     Mobile view
+
+----------------------*/
+
+@media (max-width:600px) {
+    .common-container{
+        width: 95%;
+    }
+
+    #nav-container{
+        display: none;
+    }
+    
+    #banner-container{
+        flex-direction: column;
+    }
+
+    #banner-text h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+     #bn-img img{
+        margin: 60px 0;
+    }
+
+    #player-container{
+        grid-template-columns: 320px;
+    }
+
+
+    .article-mb{
+        flex-direction: column;
+    }
+
+
+    .match-detail{
+        flex-direction: column-reverse;
+    }
+
+    .team-image img{
+        width: 100px;
+        height: 100px;
+    }
+
+    body h1{
+        font-size: 18px;
+    }
+    body p{
+        font-size: 13px;
+    }
+    .article-text h1,
+    .match h1,
+    .member h1
+    {
+        font-size: 30px;
+    }
+
+    .article-image img{
+        margin-top: 30px;
+    }
+
+    .footer-image img{
+        width: 300px;
+    }
+
+    .article-text p{
+        width: 80%;
+    }
+
+    .add p{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width:768px) {
+    #nav-container{
+        display: none;
+    }
+    #player-container{
+        grid-template-columns: repeat(2,320px);
+    }
+}
